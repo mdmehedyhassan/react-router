@@ -1,0 +1,8 @@
+.card-style{
+    background-color: rgb(8, 73, 32);
+    color: white;
+    font-weight: 700;
+    border-radius: 10px;
+    border: 1px solid red;
+    width :18rem
+}
