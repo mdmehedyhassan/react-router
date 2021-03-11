@@ -18,7 +18,7 @@ const TeamDetail = () => {
         <div className="bg-dark">
             {
                 teamDetail.map(team =>
-                    <div>
+                    <div key={team.idTeam}>
                         <div className="club-background-image">
                             <div className="club-background-text">
                                 <img className="w-75" src={team.strTeamBadge} alt="" />
@@ -29,14 +29,14 @@ const TeamDetail = () => {
                         <div className="m-5">
                             <div className="row bg-warning m-1 align-items-center">
                                 <div className="col-md-6 mt-3 mb-3 p-4 ">
-                                    <h1>{team.strTeam}</h1>
-                                    <p><FontAwesomeIcon icon={faPodcast} /> Rounded: {team.intFormedYear}</p>
-                                    <p><FontAwesomeIcon icon={faFlag} /> Country: {team.strCountry}</p>
-                                    <p><FontAwesomeIcon icon={faFutbol} /> Sport Type: Football</p>
-                                    <p><FontAwesomeIcon icon={faMars} /> Gender: {team.strGender}</p>
+                                    <h1 style={{ fontSize: "60px", fontWeight: "900" }}>{team.strTeam}</h1>
+                                    <h3><FontAwesomeIcon icon={faPodcast} /> Rounded: {team.intFormedYear}</h3>
+                                    <h3><FontAwesomeIcon icon={faFlag} /> Country: {team.strCountry}</h3>
+                                    <h3><FontAwesomeIcon icon={faFutbol} /> Sport Type: Football</h3>
+                                    <h3><FontAwesomeIcon icon={faMars} /> Gender: {team.strGender}</h3>
                                 </div>
                                 <div className="col-md-6">
-                                    <img className="w-100 p-4" src={team.strTeamFanart4} alt="" />
+                                    <img className="w-100 p-2" src={team.strTeamFanart4} alt="" />
                                 </div>
                             </div>
                             <div className="text-warning pt-5">
@@ -45,8 +45,8 @@ const TeamDetail = () => {
                                 <p>{team.strDescriptionIT}</p>
                             </div>
                         </div>
-                        <div class="d-flex justify-content-center text-light pb-5">
-                            <a style={{ fontSize: "50px"}} href="#" className="link-primary p-3"><FontAwesomeIcon icon={faTwitter} /></a>
+                        <div className="d-flex justify-content-center text-light pb-5">
+                            <a style={{ fontSize: "50px"}} href={team.strTwitter} className="link-primary p-3"><FontAwesomeIcon icon={faTwitter} /></a>
                             <a style={{ fontSize: "50px"}} href="#" className="link-primary p-3"><FontAwesomeIcon icon={faFacebook} /></a>
                             <a style={{ fontSize: "50px"}} href="#" className="link-danger p-3"><FontAwesomeIcon icon={faYoutube} /></a>
                         </div>
