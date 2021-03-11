@@ -29,7 +29,7 @@ const TeamDetail = () => {
                         <div className="m-5">
                             <div className="row bg-warning m-1 align-items-center">
                                 <div className="col-md-6 mt-3 mb-3 p-4 ">
-                                    <h1 style={{ fontSize: "60px", fontWeight: "900" }}>{team.strTeam}</h1>
+                                    <h1 style={{ fontSize: "50px", fontWeight: "900" }}>{team.strTeam}</h1>
                                     <h3><FontAwesomeIcon icon={faPodcast} /> Rounded: {team.intFormedYear}</h3>
                                     <h3><FontAwesomeIcon icon={faFlag} /> Country: {team.strCountry}</h3>
                                     <h3><FontAwesomeIcon icon={faFutbol} /> Sport Type: Football</h3>
@@ -45,11 +45,11 @@ const TeamDetail = () => {
                                 <p>{team.strDescriptionIT}</p>
                             </div>
                         </div>
-                        <div className="d-flex justify-content-center text-light pb-5">
-                            <h1>
-                                <FontAwesomeIcon icon={faTwitter} />
-                                <FontAwesomeIcon icon={faFacebook} />
-                                <FontAwesomeIcon icon={faYoutube} />
+                        <div className="d-flex justify-content-center pb-5">
+                            <h1 style={{ fontSize: "70px"}}>
+                                <FontAwesomeIcon className="p-2 text-primary" icon={faTwitter} />
+                                <FontAwesomeIcon className="p-2 text-primary" icon={faFacebook} />
+                                <FontAwesomeIcon className="p-2 text-danger" icon={faYoutube} />
                             </h1>
                             
                         </div>
