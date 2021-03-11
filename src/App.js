@@ -6,6 +6,7 @@ import {
   Route
 } from "react-router-dom";
 import TeamDetail from './components/TeamDetail/TeamDetail';
+import Error from './components/Error/Error';
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
           </Route>
           <Route path="/teamDetail/:id">
             <TeamDetail />
+          </Route>
+          <Route path="*">
+            <Error/>
           </Route>
         </Switch>
       </Router>

@@ -2,10 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Web Site Information
 
-In the project directory, Here you can see the details of all the teams in the English Premier League.:
+In the project directory, Here you can see the details of all the teams in the English Premier League. You can see the information of 20 teams of English league here. All of these files are fake data.
 
-### `Live link`
+### `Live Link`
 
-https://sleepy-rosalind-ad6df4.netlify.app/
+If you want to see our web site, click on this link.  https://sleepy-rosalind-ad6df4.netlify.app/
