@@ -42,7 +42,7 @@ const TeamDetail = () => {
                             <div className="text-warning pt-5">
                                 <p >{team.strDescriptionEN}</p>
                                 <br />
-                                <p>{team.strDescriptionIT}</p>
+                                <p>{team.strStadiumDescription}</p>
                             </div>
                         </div>
                         <div className="d-flex justify-content-center pb-5">
