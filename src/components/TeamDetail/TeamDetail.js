@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import './TeamDetail.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee, faFlag, faFutbol, faMars, faPodcast } from '@fortawesome/free-solid-svg-icons'
+import { faFlag, faFutbol, faMars, faPodcast } from '@fortawesome/free-solid-svg-icons'
 import { faFacebook, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 const TeamDetail = () => {
@@ -13,7 +13,7 @@ const TeamDetail = () => {
         fetch(url)
             .then(res => res.json())
             .then(data => setTeamDetail(data.teams))
-    }, []);
+    }, [id]);
     return (
         <div className="bg-dark">
             {
@@ -46,7 +46,7 @@ const TeamDetail = () => {
                             </div>
                         </div>
                         <div className="d-flex justify-content-center text-light pb-5">
-                            <a style={{ fontSize: "50px"}} href={team.strTwitter} className="link-primary p-3"><FontAwesomeIcon icon={faTwitter} /></a>
+                            <a style={{ fontSize: "50px"}} href="#" className="link-primary p-3"><FontAwesomeIcon icon={faTwitter} /></a>
                             <a style={{ fontSize: "50px"}} href="#" className="link-primary p-3"><FontAwesomeIcon icon={faFacebook} /></a>
                             <a style={{ fontSize: "50px"}} href="#" className="link-danger p-3"><FontAwesomeIcon icon={faYoutube} /></a>
                         </div>
