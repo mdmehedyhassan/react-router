@@ -2,6 +2,8 @@ import React from 'react';
 import { Card,Button } from 'react-bootstrap';
 import { useHistory } from 'react-router';
 import './Team.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const Team = (props) => {
     const {idTeam, strTeam, strTeamBadge } = props.team;
@@ -12,14 +14,14 @@ const Team = (props) => {
     }
     return (
         <div>
-            <Card className="bg-warning " style={{ width: '21rem' , margin: '10%' }}>
-                <Card.Img variant="top" src={strTeamBadge} />
-                <Card.Body>
-                    <Card.Title>{strTeam}</Card.Title>
+            <Card className="bg-warning justify-content-center align-items-center" style={{ width: '21rem' , margin: '10%' }}>
+                <Card.Img className="w-75" variant="top" src={strTeamBadge} />
+                <Card.Body >
+                    <Card.Title><h1>{strTeam}</h1></Card.Title>
                     <Card.Text>
                         <small> Sports Type: Football</small>
                     </Card.Text>
-                    <Button onClick={() => showTeamDetail()} variant="primary">Explore</Button>
+                    <Button onClick={() => showTeamDetail()} variant="primary">Explore <FontAwesomeIcon icon={faArrowRight} /> </Button>
                 </Card.Body>
             </Card>
         </div>

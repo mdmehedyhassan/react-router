@@ -10,7 +10,7 @@ import TeamDetail from './components/TeamDetail/TeamDetail';
 
 function App() {
   return (
-    <div className="App">
+    <div >
       <Router>
         <Switch>
           <Route exact path="/">
