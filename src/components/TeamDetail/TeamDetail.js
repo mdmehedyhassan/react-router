@@ -46,9 +46,12 @@ const TeamDetail = () => {
                             </div>
                         </div>
                         <div className="d-flex justify-content-center text-light pb-5">
-                            <a style={{ fontSize: "50px"}} href="#" className="link-primary p-3"><FontAwesomeIcon icon={faTwitter} /></a>
-                            <a style={{ fontSize: "50px"}} href="#" className="link-primary p-3"><FontAwesomeIcon icon={faFacebook} /></a>
-                            <a style={{ fontSize: "50px"}} href="#" className="link-danger p-3"><FontAwesomeIcon icon={faYoutube} /></a>
+                            <h1>
+                                <FontAwesomeIcon icon={faTwitter} />
+                                <FontAwesomeIcon icon={faFacebook} />
+                                <FontAwesomeIcon icon={faYoutube} />
+                            </h1>
+                            
                         </div>
                     </div>
                 )
